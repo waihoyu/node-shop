@@ -3,6 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+
 import {Button, Row, Col, Swipe, SwipeItem, Lazyload} from 'vant'
 import axios from 'axios'
 

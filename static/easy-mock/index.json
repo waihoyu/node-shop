@@ -1,7 +1,7 @@
 {
     "data": {
         "advertesPicture": {
-            "PICTURE_ADDRESS": ""
+            "PICTURE_ADDRESS": "../../../static/images/banner/01.png"
         },
         "floor3": [
             {
@@ -45,18 +45,46 @@
         ],
         "recommend": [
             {
-                "image": "",
-                "mallPrice": "",
-                "goodsId": "",
+                "image": "../../../static/images/category/01.png",
+                "mallPrice": 12,
+                "goodsId": "1234",
                 "price": 3.5,
-                "goodsName": ""
+                "goodsName": "苹果1"
             },
             {
-                "image": "",
+                "image": "../../../static/images/category/01.png",
                 "mallPrice": 24,
-                "goodId": "",
+                "goodId": "1234",
                 "price": 28,
-                "goodName": ""
+                "goodsName": "苹果2"
+            },
+            {
+                "image": "../../../static/images/category/01.png",
+                "mallPrice": 24,
+                "goodId": "1234",
+                "price": 28,
+                "goodsName": "苹果3"
+            },
+            {
+                "image": "../../../static/images/category/01.png",
+                "mallPrice": 12,
+                "goodsId": "1234",
+                "price": 3.5,
+                "goodsName": "苹果4"
+            },
+            {
+                "image": "../../../static/images/category/01.png",
+                "mallPrice": 24,
+                "goodId": "1234",
+                "price": 28,
+                "goodsName": "苹果5"
+            },
+            {
+                "image": "../../../static/images/category/01.png",
+                "mallPrice": 24,
+                "goodId": "1234",
+                "price": 28,
+                "goodsName": "苹果6"
             }
         ],
         "sendFee": {
