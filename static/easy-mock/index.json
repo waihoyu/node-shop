@@ -3,29 +3,110 @@
         "advertesPicture": {
             "PICTURE_ADDRESS": "../../../static/images/banner/01.png"
         },
+        "slides":[
+            {"imageUrl": "../../../static/images/swiper/01.png"},
+            {"imageUrl": "../../../static/images/swiper/02.png"},
+            {"imageUrl": "../../../static/images/swiper/03.png"},
+            {"imageUrl": "../../../static/images/swiper/04.png"},
+            {"imageUrl": "../../../static/images/swiper/05.png"},
+            {"imageUrl": "../../../static/images/swiper/06.png"},
+            {"imageUrl": "../../../static/images/swiper/07.png"}
+        ],
         "floor3": [
             {
-                "goodsId": "",
-                "image": ""
+                "goodsId": "1",
+                "image": "../../../static/images/category/01.png"
+            },
+            {
+                "goodsId": "2",
+                "image": "../../../static/images/category/01.png"
+            },
+            {
+                "goodsId": "3",
+                "image": "../../../static/images/category/01.png"
+            },
+            {
+                "goodsId": "4",
+                "image": "../../../static/images/category/01.png"
+            },
+            {
+                "goodsId": "5",
+                "image": "../../../static/images/category/01.png"
+            },
+            {
+                "goodsId": "6",
+                "image": "../../../static/images/category/01.png"
+            },
+            {
+                "goodsId": "7",
+                "image": "../../../static/images/category/01.png"
             }
         ],
         "floor2": [
             {
-                "goodsId": "",
-                "image": ""
+                "goodsId": "1",
+                "image": "../../../static/images/category/01.png"
+            },
+            {
+                "goodsId": "2",
+                "image": "../../../static/images/category/01.png"
+            },
+            {
+                "goodsId": "3",
+                "image": "../../../static/images/category/01.png"
+            },
+            {
+                "goodsId": "4",
+                "image": "../../../static/images/category/01.png"
+            },
+            {
+                "goodsId": "5",
+                "image": "../../../static/images/category/01.png"
+            },
+            {
+                "goodsId": "6",
+                "image": "../../../static/images/category/01.png"
+            },
+            {
+                "goodsId": "7",
+                "image": "../../../static/images/category/01.png"
+            }
+        ],
+        "floor1": [
+            {
+                "goodsId": "1",
+                "image": "../../../static/images/category/01.png"
+            },
+            {
+                "goodsId": "2",
+                "image": "../../../static/images/category/01.png"
+            },
+            {
+                "goodsId": "3",
+                "image": "../../../static/images/category/01.png"
+            },
+            {
+                "goodsId": "4",
+                "image": "../../../static/images/category/01.png"
+            },
+            {
+                "goodsId": "5",
+                "image": "../../../static/images/category/01.png"
+            },
+            {
+                "goodsId": "6",
+                "image": "../../../static/images/category/01.png"
+            },
+            {
+                "goodsId": "7",
+                "image": "../../../static/images/category/01.png"
             }
         ],
         "floorName": {
-            "floor3": "奶品",
-            "floor2": "水果",
-            "floor1": "休闲"
+            "floor3": "牛奶制品",
+            "floor2": "水果蔬菜",
+            "floor1": "休闲食品"
         },
-        "floor1": [
-            {
-                "goodsId": "",
-                "image": ""
-            }
-        ],
         "buyTime": "08:00:00-20:30:00",
         "hotGoods": [
             {

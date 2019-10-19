@@ -45,11 +45,15 @@
           </swiper>
         </div> 
     </div>
-    <swiperDefault></swiperDefault>
+    <floorComponent :floorData="floor1" :floorTitle= "floorName.floor1"></floorComponent>
+    <floorComponent :floorData="floor2" :floorTitle= "floorName.floor2"></floorComponent>
+    <floorComponent :floorData="floor3" :floorTitle= "floorName.floor3"></floorComponent>
+
   </div>
 </template>
 
 <script>
+import floorComponent from '../../components/component/floorComponent'
 import swiperDefault from '../../components/swiper/swiperDefault';
 import {swiper, swiperSlide} from 'vue-awesome-swiper'
 import 'swiper/dist/css/swiper.css'
@@ -58,18 +62,14 @@ export default {
     return {
       msg: "shoppingMall",
       locationIcon: require("../../assets/images/location.png"),
-      bannerPicArray: [
-          {imageUrl: require('../../assets/images/01.png')},
-          {imageUrl: require('../../assets/images/02.png')},
-          {imageUrl: require('../../assets/images/03.png')},
-          {imageUrl: require('../../assets/images/04.png')},
-          {imageUrl: require('../../assets/images/05.png')},
-          {imageUrl: require('../../assets/images/06.png')},
-          {imageUrl: require('../../assets/images/07.png')}
-      ],
+      bannerPicArray: [],
       category:[],
       adBanner: '',
       recommendGoods:[],
+      floor1:[],
+      floor2:[],
+      floor3:[],
+      floorName:{},
       swiperOption:{
           slidesPerView:3,
           freeMode: true,
@@ -78,7 +78,7 @@ export default {
     };
   },
   components: {
-      swiper, swiperSlide, swiperDefault
+      swiper, swiperSlide, swiperDefault,floorComponent
   },
   created(){
     //   console.log(this.adBanner)
@@ -89,8 +89,12 @@ export default {
           if (response.status == 200) {
               this.category = response.data.data.category;
               this.adBanner = response.data.data.advertesPicture.PICTURE_ADDRESS;
-            //   this.bannerPicArray = response.data.data.slides;
+              this.bannerPicArray = response.data.data.slides;
               this.recommendGoods = response.data.data.recommend;
+              this.floor1 = response.data.data.floor1;
+              this.floor2 = response.data.data.floor2;
+              this.floor3 = response.data.data.floor3;
+              this.floorName = response.data.data.floorName;
               console.log(this.category)
             }
       }).catch(err => {
@@ -167,6 +171,37 @@ export default {
     font-size: 12px;
     text-align: center;
     border-bottom: 1px solid rgb(27, 27, 27);
-
+}
+.floor-anomally{
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    border-bottom: 1px solid red;
+}
+.floor-anomally div {
+    width:10rem;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.floor-one{
+    border-right: 1px solid blue;
+}
+.floor-two {
+    border-bottom: 1px solid green;
+}
+.floor-rule{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #fff;
+}
+.floor-rule div {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width:10rem;
+    border-bottom: 1px solid #000;
+}
+.floor-rule div:nth-child(odd) {
+    border-right: 1px solid blue;
 }
 </style>
