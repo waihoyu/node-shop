@@ -61,7 +61,7 @@ export default {
   display: flex;
   flex-direction: row;
   background-color: #fff;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid #eee;
 }
 .floor-anomally div {
   width: 10rem;
@@ -69,10 +69,10 @@ export default {
   -webkit-box-sizing: border-box;
 }
 .floor-one {
-  border-right: 1px solid blue;
+  border-right: 1px solid #eee;
 }
 .floor-two {
-  border-bottom: 1px solid green;
+  border-bottom: 1px solid #eee;
 }
 .floor-rule {
   display: flex;
@@ -84,9 +84,9 @@ export default {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 10rem;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #eee;
 }
 .floor-rule div:nth-child(odd) {
-  border-right: 1px solid blue;
+  border-right: 1px solid #eee;
 }
 </style>

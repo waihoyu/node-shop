@@ -1,0 +1,215 @@
+// "image": "http://images.baixingliangfan.cn/firstCategoryPicture/20180408/20180408111959_2837.png"
+
+{
+    "data": {
+        "advertesPicture": {
+            "PICTURE_ADDRESS": "../../../static/images/banner/01.png"
+        },
+        "slides":[
+            {"imageUrl": "../../../static/images/swiper/01.png"},
+            {"imageUrl": "../../../static/images/swiper/02.png"},
+            {"imageUrl": "../../../static/images/swiper/03.png"},
+            {"imageUrl": "../../../static/images/swiper/04.png"},
+            {"imageUrl": "../../../static/images/swiper/05.png"},
+            {"imageUrl": "../../../static/images/swiper/06.png"},
+            {"imageUrl": "../../../static/images/swiper/07.png"}
+        ],
+        "floor3": [
+            {
+                "goodsId": "1",
+                "image": "../../../static/images/category/01.png"
+            },
+            {
+                "goodsId": "2",
+                "image": "../../../static/images/category/01.png"
+            },
+            {
+                "goodsId": "3",
+                "image": "../../../static/images/category/01.png"
+            },
+            {
+                "goodsId": "4",
+                "image": "../../../static/images/category/01.png"
+            },
+            {
+                "goodsId": "5",
+                "image": "../../../static/images/category/01.png"
+            },
+            {
+                "goodsId": "6",
+                "image": "../../../static/images/category/01.png"
+            },
+            {
+                "goodsId": "7",
+                "image": "../../../static/images/category/01.png"
+            }
+        ],
+        "floor2": [
+            {
+                "goodsId": "1",
+                "image": "../../../static/images/category/01.png"
+            },
+            {
+                "goodsId": "2",
+                "image": "../../../static/images/category/01.png"
+            },
+            {
+                "goodsId": "3",
+                "image": "../../../static/images/category/01.png"
+            },
+            {
+                "goodsId": "4",
+                "image": "../../../static/images/category/01.png"
+            },
+            {
+                "goodsId": "5",
+                "image": "../../../static/images/category/01.png"
+            },
+            {
+                "goodsId": "6",
+                "image": "../../../static/images/category/01.png"
+            },
+            {
+                "goodsId": "7",
+                "image": "../../../static/images/category/01.png"
+            }
+        ],
+        "floor1": [
+            {
+                "goodsId": "1",
+                "image": "../../../static/images/category/01.png"
+            },
+            {
+                "goodsId": "2",
+                "image": "../../../static/images/category/01.png"
+            },
+            {
+                "goodsId": "3",
+                "image": "../../../static/images/category/01.png"
+            },
+            {
+                "goodsId": "4",
+                "image": "../../../static/images/category/01.png"
+            },
+            {
+                "goodsId": "5",
+                "image": "../../../static/images/category/01.png"
+            },
+            {
+                "goodsId": "6",
+                "image": "../../../static/images/category/01.png"
+            },
+            {
+                "goodsId": "7",
+                "image": "../../../static/images/category/01.png"
+            }
+        ],
+        "floorName": {
+            "floor3": "牛奶制品",
+            "floor2": "水果蔬菜",
+            "floor1": "休闲食品"
+        },
+        "buyTime": "08:00:00-20:30:00",
+        "hotGoods": [
+            {
+                "mallPrice": 12,
+                "image": "",
+                "goodsId": "",
+                "price": 15,
+                "name": "火龙果"
+            },
+            {
+                "mallPrice": 12,
+                "image": "",
+                "goodsId": "",
+                "price": 15,
+                "name": "火龙果"
+            }
+        ],
+        "recommend": [
+            {
+                "image": "../../../static/images/category/01.png",
+                "mallPrice": 12,
+                "goodsId": "1234",
+                "price": 3.5,
+                "goodsName": "苹果1"
+            },
+            {
+                "image": "../../../static/images/category/01.png",
+                "mallPrice": 24,
+                "goodId": "1234",
+                "price": 28,
+                "goodsName": "苹果2"
+            },
+            {
+                "image": "../../../static/images/category/01.png",
+                "mallPrice": 24,
+                "goodId": "1234",
+                "price": 28,
+                "goodsName": "苹果3"
+            },
+            {
+                "image": "../../../static/images/category/01.png",
+                "mallPrice": 12,
+                "goodsId": "1234",
+                "price": 3.5,
+                "goodsName": "苹果4"
+            },
+            {
+                "image": "../../../static/images/category/01.png",
+                "mallPrice": 24,
+                "goodId": "1234",
+                "price": 28,
+                "goodsName": "苹果5"
+            },
+            {
+                "image": "../../../static/images/category/01.png",
+                "mallPrice": 24,
+                "goodId": "1234",
+                "price": 28,
+                "goodsName": "苹果6"
+            }
+        ],
+        "sendFee": {
+            "chargeStartFee": "59.00",
+            "deliveryFee": "0.00"
+        },
+        "category": [
+            {
+                "image": "../../../static/images/category/01.png",
+                "mallCategoryId": "1",
+                "mallCategoryName": "营养鲜果",
+                "bxMallSubDto": [],
+                "comments": null
+            },
+            {
+                "image": "../../../static/images/category/01.png",
+                "mallCategoryId": "1",
+                "mallCategoryName": "营养鲜果",
+                "bxMallSubDto": [],
+                "comments": null
+            },
+            {
+                "image": "../../../static/images/category/01.png",
+                "mallCategoryId": "1",
+                "mallCategoryName": "营养鲜果",
+                "bxMallSubDto": [],
+                "comments": null
+            },
+            {
+                "image": "../../../static/images/category/01.png",
+                "mallCategoryId": "1",
+                "mallCategoryName": "营养鲜果",
+                "bxMallSubDto": [],
+                "comments": null
+            },
+            {
+                "image": "../../../static/images/category/01.png",
+                "mallCategoryId": "1",
+                "mallCategoryName": "营养鲜果",
+                "bxMallSubDto": [],
+                "comments": null
+            }
+        ]
+    }
+}
