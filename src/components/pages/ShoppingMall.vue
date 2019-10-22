@@ -51,6 +51,13 @@
       <div class="hot-title">热卖商品</div>
       <div class="hot-goods">
         <!--这里需要一个list组件-->
+        <van-list>
+            <van-row gutter="20">
+                <van-col span="12" v-for="(item, index) in hotGoods" :key="index">
+                    <goodsInform :goodsImage='item.image' :goodsName='item.name' :goodsPrice='item.price'></goodsInform>
+                </van-col>
+            </van-row>
+        </van-list>
       </div>
     </div>
   </div>
@@ -59,6 +66,7 @@
 <script>
 import floorComponent from "../../components/component/floorComponent";
 import swiperDefault from "../../components/swiper/swiperDefault";
+import goodsInform from "../../components/component/goodsInform";
 import { swiper, swiperSlide } from "vue-awesome-swiper";
 import "swiper/dist/css/swiper.css";
 import { toMoney } from "@/filter/moneyFilter.js";
@@ -76,6 +84,7 @@ export default {
       floor2: [],
       floor3: [],
       floorName: {},
+      hotGoods:[],
       swiperOption: {
         slidesPerView: 3,
         freeMode: true,
@@ -87,7 +96,8 @@ export default {
     swiper,
     swiperSlide,
     swiperDefault,
-    floorComponent
+    floorComponent,
+    goodsInform
   },
   filters: {
     moneyFilter(money) {
@@ -110,6 +120,7 @@ export default {
           this.floor2 = response.data.data.floor2;
           this.floor3 = response.data.data.floor3;
           this.floorName = response.data.data.floorName;
+          this.hotGoods = response.data.data.hotGoods;
           //   console.log(this.category)
         }
       })
