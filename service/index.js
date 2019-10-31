@@ -1,25 +1,34 @@
 
+/*
+ *@description:
+ *@author: Wai HoYu
+ *@date: 2019-10-31 13:35:41
+ *@version: V1.0.5
+*/
+
 const Koa = require('koa');
 const app = new Koa();
-const {connect, initSchema} = require('./database/init');
+const {connect, initSchemas} = require('./database/init');
 const mongoose = require('mongoose');
  
-
-;(async ()=>{
+;(async () => {
     await connect();
-    initSchema();
+    initSchemas();
     const User = mongoose.model('User');
-    let oneUser = new User({userName: 'js',password:'123456'});
-    oneUser.save().then(()=>{
-        console.log("插入成功");
-    })
-})()
+    let oneUser = new User({userName: 'js',password: '123456'});
+    oneUser.save().then(() => {
+        console.log('插入成功');
+    });
+})();
 
 app.use(async (ctx)=>{
-    ctx.body = '<h2>koa2</h2>';
+    ctx.body = '<h2> koa2 </h2>';
 });
 
-
-app.listen(3000,()=>{
+app.listen(3000, () => {
     console.log('[Server] starting at port 3000');
 });
+
+
+
+
