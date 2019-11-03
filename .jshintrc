@@ -4,12 +4,13 @@
         "window": false,
         "document":false
     },
-    "strict": true,
+    "strict": false,
     "curly": true,
     "eqeqeq": true,
     "noarg": true,
     "noempty": true,
     "quotmark": "single",
     "undef": true,
-    "unused": true
+    "unused": true,
+    "esnext" : true
 }

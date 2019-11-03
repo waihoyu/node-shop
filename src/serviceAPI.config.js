@@ -5,10 +5,13 @@
  *@version: V1.0.5
 */
 
-let baseurl = "";
+let BASEURL = '';
+const LOCALURL = 'http://localhost:3000';
 
 const URL = {
-    getShopingMallInfo: baseurl + 'index'
-}
+    getShopingMallInfo: BASEURL + 'index' ,
+    getGoodsInfo : BASEURL + 'getGoodsInfo' ,
+    registerUser: LOCALURL +  'user/register'
+};
 
 module.exports = URL;

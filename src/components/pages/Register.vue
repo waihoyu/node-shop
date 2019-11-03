@@ -32,6 +32,8 @@
 </template>
 
 <script>
+    import axios from "axios";
+    import URL from '../../serviceAPI.config'
     export default {
         data () {
             return {
