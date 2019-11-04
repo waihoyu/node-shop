@@ -24,7 +24,7 @@
             >
             </van-field>  
             <div class="register-button">
-                <van-button type="primary" size="large">马上注册
+                <van-button type="primary" size="large" @click="axiosRegister">马上注册
                 </van-button>
             </div>          
         </div>
@@ -33,7 +33,8 @@
 
 <script>
     import axios from "axios";
-    import URL from '../../serviceAPI.config'
+    import url from '@/serviceAPI.config'
+    import { Toast } from 'vant'
     export default {
         data () {
             return {
@@ -44,6 +45,25 @@
         methods: {
             goBack(){
                 this.$router.go(-1);
+            },
+            axiosRegister(){
+                axios({
+                    url: url.registerUser,
+                    method: 'post',
+                    data:{
+                        username: this.username,
+                        password: this.password
+                    }
+                }).then(response => {
+                    console.log(response);
+                    if (response.data.code  == 200) {
+                          Toast.success(response.data.message + 'success');  
+                    }else{
+                        Toast.fail(response.data.message.message + 'fail');  
+                    }
+                }).catch(error => {
+                    console.log(error)
+                });
             }
         }
     }
