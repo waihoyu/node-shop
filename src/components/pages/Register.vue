@@ -24,7 +24,7 @@
             >
             </van-field>  
             <div class="register-button">
-                <van-button type="primary" size="large" @click="axiosRegister">马上注册
+                <van-button type="primary" size="large" @click="axiosRegister" :loading = "openLoading">马上注册
                 </van-button>
             </div>          
         </div>
@@ -39,7 +39,8 @@
         data () {
             return {
                 username:'',
-                password:''
+                password:'',
+                openLoading:false ,  //是否开启注册的loading状态
             }
         },
         methods: {
@@ -47,6 +48,7 @@
                 this.$router.go(-1);
             },
             axiosRegister(){
+                this.openLoading = true;
                 axios({
                     url: url.registerUser,
                     method: 'post',
@@ -55,14 +57,18 @@
                         password: this.password
                     }
                 }).then(response => {
-                    console.log(response);
+                    // console.log(response);
                     if (response.data.code  == 200) {
-                          Toast.success(response.data.message + 'success');  
+                          Toast.success(response.data.message + ' 注册成功'); 
+                          this.$router.push('/'); 
                     }else{
-                        Toast.fail(response.data.message.message + 'fail');  
+                        // console.log(response)
+                        this.openLoading = false;
+                        Toast.fail(response.data.message.errmsg + ' 注册失败'); 
                     }
                 }).catch(error => {
-                    console.log(error)
+                    // console.log(error);
+                    this.openLoading = false;
                 });
             }
         }

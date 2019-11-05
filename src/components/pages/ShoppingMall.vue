@@ -109,8 +109,7 @@ export default {
     this.$axios({
       url: "../../../static/easy-mock/index.json",
       method: "get"
-    })
-      .then(response => {
+    }).then(response => {
         if (response.status == 200) {
           this.category = response.data.data.category;
           this.adBanner = response.data.data.advertesPicture.PICTURE_ADDRESS;
@@ -123,8 +122,7 @@ export default {
           this.hotGoods = response.data.data.hotGoods;
           //   console.log(this.category)
         }
-      })
-      .catch(err => {
+      }).catch(err => {
         console.log(err);
       });
   }
