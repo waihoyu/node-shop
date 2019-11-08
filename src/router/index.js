@@ -5,15 +5,15 @@ import ShoppingMall from '@/components/pages/ShoppingMall';
 import Register from '@/components/pages/Register.vue';
 import Login from '@/components/pages/Login.vue';
 
-
 Vue.use(Router);
 
 export default new Router({
-  mode: 'history',
-  routes: [
-    { path: '/',  redirect: '/shop' },
-    { path: '/login', name: 'Login', component: Login },
-    { path: '/register', name: 'Register', component: Register }, 
-    { path: '/shop', name: 'ShoppingMall', component: ShoppingMall }
+    mode: 'history',
+    routes: [
+        { path: '/', redirect: '/shop' },
+        { path: '/login', name: 'Login', component: Login },
+        { path: '/register', name: 'Register', component: Register },
+        { path: '/shop', name: 'ShoppingMall', component: ShoppingMall },
+        { path: '/hello', name: 'HelloWorld', component: HelloWorld }
     ]
 });

@@ -7,7 +7,8 @@
     "scripts": {
         "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
         "start": "npm run dev",
-        "build": "node build/build.js"
+        "build": "node build/build.js",
+        "eslint": "eslint src"
     },
     "dependencies": {
         "axios": "^0.19.0",
@@ -18,6 +19,8 @@
         "vue-router": "^3.0.1"
     },
     "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^2.6.1",
+        "@typescript-eslint/parser": "^2.6.1",
         "autoprefixer": "^7.1.2",
         "babel-core": "^6.22.1",
         "babel-helper-vue-jsx-merge-props": "^2.0.3",
@@ -32,7 +35,7 @@
         "copy-webpack-plugin": "^4.0.1",
         "css-loader": "^0.28.0",
         "eslint": "^6.6.0",
-        "eslint-config-koot": "^1.5.0",
+        "eslint-plugin-vue": "^6.0.0",
         "extract-text-webpack-plugin": "^3.0.0",
         "file-loader": "^1.1.4",
         "friendly-errors-webpack-plugin": "^1.6.1",
