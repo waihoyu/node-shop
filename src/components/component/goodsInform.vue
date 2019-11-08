@@ -20,7 +20,7 @@
     }
 </script>
 
-<style  scoped>
+<style scoped>
     .goods-name{
         padding: 0 8px;
        overflow: hidden;

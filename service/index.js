@@ -7,16 +7,17 @@
 */
 
 const Koa = require('koa');
-const app = new Koa();
 const {connect, initSchemas} = require('./database/init');
+let user = require('./appApi/user');
+let home = require('./appApi/home');
 const mongoose = require('mongoose');
 const Router = require('koa-router');
 const cors = require('koa2-cors');
 const koaparser = require('koa-bodyparser');
+
+const app = new Koa();
 app.use(koaparser());
 app.use(cors());
-let user = require('./appApi/user');
-let home = require('./appApi/home');
 
 let router = new Router();
 router.use('/user', user.routes());
@@ -42,7 +43,3 @@ app.use(async (ctx)=>{
 app.listen(3000, () => {
     console.log('[Server] starting at port 3000');
 });
-
-
-
-

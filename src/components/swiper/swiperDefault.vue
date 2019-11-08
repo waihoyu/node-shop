@@ -36,10 +36,10 @@
 </script>
 
 <style scoped>
-.swiper-slide{
-    height: 40px;
-    text-align: center;
-    padding-top: .3rem;
-    border-bottom: 1px solid #ccc;
-}
+    .swiper-slide{
+        height: 40px;
+        text-align: center;
+        padding-top: .3rem;
+        border-bottom: 1px solid #ccc;
+    }
 </style>

@@ -1,8 +1,8 @@
 <template>
     <div>
-        <van-nav-bar title="用户注册" left-text="返回" left-arrow @click-left="goBack">
+        <van-nav-bar title="用户登陆" left-text="返回" left-arrow @click-left="goBack">
         </van-nav-bar>
-        <div class="register-panel">
+        <div class="login-panel">
             <van-field class="field"
                 v-model="username"
                 label="用户名" 
@@ -25,8 +25,8 @@
                 :error-message="passwordErrorMsg"
             >
             </van-field>  
-            <div class="register-button">
-                <van-button type="primary" size="large" @click="register" :loading = "openLoading">马上注册
+            <div class="login-button">
+                <van-button type="primary" size="large" @click="login" :loading = "openLoading">用户登陆
                 </van-button>
             </div>          
         </div>
@@ -51,13 +51,13 @@
             goBack(){
                 this.$router.go(-1);
             },
-            register(){
-                this.checkForm() && this.axiosRegister();
+            login(){
+                this.checkForm() && this.axioslogin();
             },
-            axiosRegister(){
+            axioslogin(){
                 this.openLoading = true;
                 axios({
-                    url: url.registerUser,
+                    url: url.loginUser,
                     method: 'post',
                     data:{
                         username: this.username,
@@ -66,12 +66,12 @@
                 }).then(response => {
                     // console.log(response);
                     if (response.data.code  == 200) {
-                          Toast.success(response.data.message + ' 注册成功'); 
+                          Toast.success(response.data.message + ' 登陆成功'); 
                           this.$router.push('/'); 
                     }else{
-                        console.log(response.data)
+                        // console.log(response)
                         this.openLoading = false;
-                        Toast.fail(response.data.message.errmsg + ' 注册失败'); 
+                        Toast.fail(response.data.message.errmsg + ' 登陆失败'); 
                     }
                 }).catch(error => {
                     // console.log(error);
@@ -98,13 +98,13 @@
 </script>
 
 <style  scoped>
-.register-panel{
+.login-panel{
     width: 96%;
     border-radius: 5px;
     margin: 20px auto;
     padding-bottom: 80px;
 }
-.register-button{
+.login-button{
     padding-top: 10px;
 }
 .field{
