@@ -11,7 +11,7 @@
         "eslint": "eslint src"
     },
     "dependencies": {
-        "axios": "^0.19.0",
+        "axios": "^0.21.1",
         "glob": "^7.1.5",
         "vant": "^2.2.8",
         "vue": "^2.5.2",
